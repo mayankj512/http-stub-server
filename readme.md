@@ -10,5 +10,6 @@
 
 #### Accessing the stub server
 1. curl http://localhost:5000/<any-path>?response_file=sample
-2. The query string `response_file` should have the file name (excluding extension .json) of the file content
+2. The query string `response_file` should be the file name (excluding extension .json) of the file present in
+ the specified stub folder location whose content you want to be served.
  to be served.
