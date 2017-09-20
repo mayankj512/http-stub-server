@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 stub_response_folder_path = os.path.abspath(argv[1])
 
+
 @app.route('/<path:url>', methods=['GET', 'POST'])
 def get_sample_stub_response(url):
     print("Incoming request %s url: %s" % (request.method, request.url))
