@@ -10,7 +10,9 @@ stub_response_folder_path = os.path.abspath(argv[1])
 
 @app.route('/<path:url>', methods=['GET', 'POST'])
 def get_sample_stub_response(url):
-    print("Incoming request body: %s for %s url: %s" % (request.data, request.method, request.url))
+    print("Incoming request %s url: %s" % (request.method, request.url))
+    print("Request body: %s", request.data)
+    print("Request headers: %s", request.headers)
     response = get_file_contents(request.args.get('response_file'))
     return jsonify(response)
 
