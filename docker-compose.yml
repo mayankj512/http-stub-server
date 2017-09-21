@@ -1,0 +1,6 @@
+version: '2'
+services:
+  stub:
+    build:
+      context: ./
+      dockerfile: Dockerfile

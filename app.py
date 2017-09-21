@@ -2,7 +2,7 @@ import json
 import os
 from sys import argv
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, make_response
 
 app = Flask(__name__)
 
@@ -16,6 +16,13 @@ def get_sample_stub_response(url):
     print("Request headers: %s", request.headers)
     response = get_file_contents(request.args.get('response_file'))
     return jsonify(response)
+
+
+@app.route('/auth', methods=['POST'])
+def get_auth_response():
+    response = make_response()
+    response.headers['wallet_id'] = 'ww123'
+    return response
 
 
 def get_file_contents(stub_response_file_name):
