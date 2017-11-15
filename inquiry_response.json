@@ -1,0 +1,10 @@
+{
+"billerId": "STUB_RESPONSE",
+"transId": 
+{
+"STAN": "000017","RRN": "0000000000021","Timestamp": "20171109T132814+07","termId": "2","respCode": "00","authKey": "E3167B24E61170E3735EAD426799CE9B","Amount": 52000
+},
+"transData": 
+{"idCustomer": "531211111110","custName": "TRI ADITYA","bills": "DES16","numOfBills": 5,"billAmount": 50000,"adminFee": 2000},
+"descUI": "IDPEL : 531211111110nNAMA  : TRI ADITYAnTOTAL LBR TAGIHAN : 1nBULAN/TAHUN : DES16nTAGIHAN PLN : RP 50.000,00nADMIN FEE   : RP 2.000,00"
+}

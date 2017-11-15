@@ -1,0 +1,13 @@
+{
+    "correlationId": "2ef97888-4110-4dbc-a82b-ffc48921a1c6",
+    "success": true,
+    "data": {
+        "orderId": "937-529716-GOBILLS",
+        "amount": {
+            "amount": 51500,
+            "currency": "IDR",
+            "symbol": "Rp"
+        },
+        "successMessage": "Your GO-PAY balance has been deducted Rp51.500. Balance will return automatically if transaction is unsuccessful."
+    }
+}

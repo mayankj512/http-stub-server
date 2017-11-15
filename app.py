@@ -1,5 +1,6 @@
 import json
 import os
+import time
 from sys import argv
 
 from flask import Flask, request, jsonify, make_response
@@ -17,6 +18,17 @@ def get_sample_stub_response(url):
     response = get_file_contents(request.args.get('response_file'))
     return jsonify(response)
 
+@app.route('/gojek/api/inquiry', methods=['GET', 'POST'])
+def get_sample_inquiry_stub_response():
+    print("Inquiry Stub : Incoming request %s url: %s" % (request.method, request.url))
+    print("Request body: %s", request.data)
+    print("Request headers: %s", request.headers)
+    response = get_file_contents('inquiry_response')
+    while True:
+    	print("going to sleep")
+    	time.sleep(5)
+    	print("waking up from sleep")
+    return jsonify(response)
 
 @app.route('/auth', methods=['POST'])
 def get_auth_response():
